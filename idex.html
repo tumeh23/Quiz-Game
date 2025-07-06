@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guiz Game</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Libertinus+Mono&family=Permanent+Marker&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div class="container">
+
+      <div class="screen active" id="start-screen">
+        <h1 class="bcgc">Quiz Time</h1>
+        <p>Test your knowledge with these fun questions</p>
+        <button id="start-btn">Start Quiz</button>
+      </div>
+
+      
+      <div class="screen" id="quiz-screen">
+        <div class="qiuz-header">
+          <h2 class="bcgc" id="question-text">Question</h2>
+          <div class="qiuz-info">
+            <p>
+              Qustion <span id="current-question">1</span> of 5
+            </p>
+            <p>
+              sccore: <span id="score">0</span>
+            </p>
+          </div>
+        </div>
+
+        <div id="answers-container" class="answers-container">
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress" id="progress"> </div>
+        </div>
+      </div>
+
+
+      <div id="result-screen" class="screen">
+        <h1 class="bcgc">Quiz Results</h1>
+        <div class="result-info">
+          <p>You scored <samp id="final-score">0</samp> out of <samp id="max-score">5</samp></p>
+          <div class="bcgc" id="result-message">Good job</div>
+        </div>
+        <button  id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>   
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
